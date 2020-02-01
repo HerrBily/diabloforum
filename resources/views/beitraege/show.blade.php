@@ -10,7 +10,7 @@
                         <div class="level">
                             <span class="flex">
                                 <a href="{{ route('profile', $thread->creator) }}">{{ $thread->creator->name }}</a> veröffentlichte:
-                                {{ $thread->title }}
+                                {{ $thread->category }}
                             </span>
                             @can ('update', $thread)
                             <form action="{{ $thread->path() }}" method="POST">
