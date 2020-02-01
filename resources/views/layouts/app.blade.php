@@ -46,7 +46,7 @@
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <script>
     tinymce.init({
-        selector:'textarea.body',
+        selector:'textarea.description',
         width: 900,
         height: 300
     });
