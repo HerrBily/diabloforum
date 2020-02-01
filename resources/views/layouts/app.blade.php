@@ -44,6 +44,13 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script>
+    tinymce.init({
+        selector:'textarea.body',
+        width: 900,
+        height: 300
+    });
+</script>
     @yield('scripts')
 </body>
 </html>
