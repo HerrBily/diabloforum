@@ -43,17 +43,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="https://cdn.tiny.cloud/1/ei3lpbp74w96jdgaohvzzis7unvx3hhfvjs57yvc7vqw4eb1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-tinymce.init({ 
-    selector: 'textarea',
-    setup: function (editor) {
-        editor.on('change', function (e) {
-            editor.save();
-        });
-    }
-});
-</script>
     @yield('scripts')
 </body>
 </html>
