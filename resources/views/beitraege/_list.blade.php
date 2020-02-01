@@ -36,7 +36,7 @@
 
     <div class="panel-body">
 
-        <div class="body">
+        <div class="body text-truncate">
             {{ $thread->body }}
         </div>
     </div>
