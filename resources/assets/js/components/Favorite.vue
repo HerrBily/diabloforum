@@ -1,6 +1,6 @@
 <template>
   <button type="submit" :class="classes" @click="toggle">
-    <span class="glyphicon glyphicon-heart"></span>
+    <span class="fas fa-heart"></span>
     <span v-text="count"></span>
   </button>
 </template>
@@ -22,7 +22,7 @@ export default {
       return [
 
           "btn", 
-          this.active ? "btn-primary" : "btn-default"
+          this.active ? "btn-info" : "btn-outline-info"
 
         ];
     },

@@ -1,0 +1,127 @@
+.show_img_cnt {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+
+.show_cnt {
+    background-color: #161616;
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+
+    .show_beitrag {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        padding: 3rem 0;
+        align-items: center;
+
+        .profil_cnt {
+            padding-right: 4rem;
+
+            div {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.comment_header {
+    padding: 3rem 0 1rem 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.new_reply_cnt {
+    margin: 0 auto;
+    width: 90%;
+
+    .reply_cnt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .reply_background {
+            background-color:#161616;
+            margin: 0 auto;
+            width: 100%;
+
+            .text_area_sect {
+                margin: 0 auto;
+                width: 80%;
+                padding: 1.5rem 0;
+        
+                .text_area {
+                    color:#fff;
+                    background-color: #161616;
+                    width: 100%;
+                    height: 70px;
+                    padding: 1rem;
+                    border: 1px solid #fff;
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        button {
+            color:#b3cfdd;
+            border:1px solid #b3cfdd;
+            border-radius: 5%;
+            padding: .8rem 6rem;
+            font-family: $font-family-sans-serif;
+            margin: 1rem;
+        }
+
+    }  
+}
+
+.replies_background:nth-child(even) {
+    background-color:#161616 
+}
+
+.panel {
+    padding-top: 2rem;
+    
+
+    .panel-heading {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+
+        .replies_cnt {
+            display: flex;
+            justify-content: space-between;
+
+            .replies_items {
+                display: flex;
+
+                h5 {
+                    padding-right: 1rem;
+                }  
+            }
+        }
+    }
+
+    .favorite_btn {
+        padding-bottom: 1.2rem;
+
+        .fa-heart {
+            padding-right: .5rem;
+        }
+    }
+
+    .panel-footer {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        justify-content: end;
+
+        button:nth-child(1) {
+            color: #fff;
+        }
+    }
+}
+
+

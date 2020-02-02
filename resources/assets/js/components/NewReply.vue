@@ -1,13 +1,18 @@
 <template>
 <div>
-  <div v-if="signedIn">
-      <div class="form-group">
-        <textarea name="body" 
-                id="body" 
-                class="form-control" 
-                rows="5"
-                required
-                v-model="body"></textarea>
+  <div class="reply_cnt" v-if="signedIn">
+      <div class="reply_background">
+          <div class="text_area_sect">
+      
+                <textarea name="body"
+                    id="body"
+                    class="text_area"
+                    rows="5"
+                    placeholder="Kommentieren ..."
+                    required
+                    v-model="body"></textarea>
+
+            </div>
       </div>
 
         <button type="submit"

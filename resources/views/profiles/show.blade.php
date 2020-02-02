@@ -5,10 +5,13 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="page-header">
-                <h1>
+                <h3>
+                    Name
+                </h3>
+                <h4>
                     {{ $profileUser->name }}
-                    <small>Seit {{ $profileUser->created_at->diffForHumans() }}</small>
-                </h1>
+                </h4>
+                <p>Mitglied seit: {{ $profileUser->created_at}}</p>
             </div>
 
             @forelse ($activities as $date => $activity)

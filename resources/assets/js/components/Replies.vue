@@ -1,10 +1,11 @@
 <template>
-    <div>    
+    <div>
+        <new-reply :endpoint="endpoint" @created="add"></new-reply>    
         <div v-for="(reply, index) in items" :key="reply.id">
             <reply :data="reply" @deleted="remove(index)"></reply>
         </div>
 
-        <new-reply :endpoint="endpoint" @created="add"></new-reply>
+        <!-- <new-reply :endpoint="endpoint" @created="add"></new-reply> -->
     </div>
 </template>
 

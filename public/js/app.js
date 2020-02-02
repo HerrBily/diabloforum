@@ -17969,7 +17969,7 @@ var app = new Vue({
 /* 142 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve './.../fonts/zorque.woff2' in '/home/vagrant/code/diabloforum/resources/assets/sass'\n    at factoryCallback (/home/vagrant/code/diabloforum/node_modules/webpack/lib/Compilation.js:260:39)\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:243:19\n    at onDoneResolving (/home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:59:20)\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:132:20\n    at /home/vagrant/code/diabloforum/node_modules/webpack/node_modules/async/dist/async.js:3888:9\n    at /home/vagrant/code/diabloforum/node_modules/webpack/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/home/vagrant/code/diabloforum/node_modules/webpack/node_modules/async/dist/async.js:1062:13)\n    at /home/vagrant/code/diabloforum/node_modules/webpack/node_modules/async/dist/async.js:969:16\n    at /home/vagrant/code/diabloforum/node_modules/webpack/node_modules/async/dist/async.js:3885:13\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:124:22\n    at onError (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:65:10)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:252:11)\n    at /home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:40:4\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:252:11)\n    at innerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:144:11)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:249:35)\n    at /home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:44:6\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:168:10)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:252:11)");
 
 /***/ }),
 /* 143 */
@@ -18846,7 +18846,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   computed: {
     classes: function classes() {
 
-      return ["btn", this.active ? "btn-primary" : "btn-default"];
+      return ["btn", this.active ? "btn-info" : "btn-outline-info"];
     },
     endpoint: function endpoint() {
 
@@ -18965,6 +18965,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
@@ -19013,6 +19018,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Reply_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Reply_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewReply_vue__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewReply_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NewReply_vue__);
+//
 //
 //
 //
@@ -19128,6 +19134,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -19148,7 +19155,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   computed: {
     ago: function ago() {
-      return __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.data.created_at).fromNow() + '...';
+      return this.data.created_at;
     },
     signedIn: function signedIn() {
       return window.App.signedIn;
@@ -50386,7 +50393,14 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._l((_vm.items), function(reply, index) {
+  return _c('div', [_c('new-reply', {
+    attrs: {
+      "endpoint": _vm.endpoint
+    },
+    on: {
+      "created": _vm.add
+    }
+  }), _vm._v(" "), _vm._l((_vm.items), function(reply, index) {
     return _c('div', {
       key: reply.id
     }, [_c('reply', {
@@ -50399,13 +50413,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     })], 1)
-  }), _vm._v(" "), _c('new-reply', {
-    attrs: {
-      "endpoint": _vm.endpoint
-    },
-    on: {
-      "created": _vm.add
-    }
   })], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
@@ -50422,32 +50429,34 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "panel panel-default",
+    staticClass: "panel panel-default replies_background",
     attrs: {
       "id": 'reply-' + _vm.id
     }
   }, [_c('div', {
     staticClass: "panel-heading"
   }, [_c('div', {
-    staticClass: "level"
-  }, [_c('h5', {
-    staticClass: "flex"
-  }, [_c('a', {
+    staticClass: "replies_cnt"
+  }, [_c('div', {
+    staticClass: "replies_items"
+  }, [_c('h5', [_c('a', {
     attrs: {
       "href": '/profiles/' + _vm.data.owner.name
     },
     domProps: {
       "textContent": _vm._s(_vm.data.owner.name)
     }
-  }), _vm._v("\n        sagte: "), _c('span', {
+  })]), _vm._v(" "), _c('p', {
     domProps: {
       "textContent": _vm._s(_vm.ago)
     }
-  })]), _vm._v(" "), (_vm.signedIn) ? _c('div', [_c('favorite', {
+  })]), _vm._v(" "), (_vm.signedIn) ? _c('div', {
+    staticClass: "favorite_btn"
+  }, [_c('favorite', {
     attrs: {
       "reply": _vm.data
     }
-  })], 1) : _vm._e()])]), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e()]), _vm._v(" "), _c('div', {
     staticClass: "panel-body"
   }, [(_vm.editing) ? _c('div', [_c('form', {
     on: {
@@ -50487,21 +50496,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.editing = false
       }
     }
-  }, [_vm._v("Abbruch")])])]) : _c('div', {
+  }, [_vm._v("Abbruch")])])]) : _c('p', {
     domProps: {
       "textContent": _vm._s(_vm.body)
     }
-  })]), _vm._v(" "), (_vm.canUpdate) ? _c('div', {
-    staticClass: "panel-footer level"
+  })])]), _vm._v(" "), (_vm.canUpdate) ? _c('div', {
+    staticClass: "panel-footer"
   }, [_c('button', {
-    staticClass: "btn btn-xs mr-1",
+    staticClass: "btn ",
     on: {
       "click": function($event) {
         _vm.editing = true
       }
     }
   }, [_vm._v("Bearbeiten")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-xs btn-danger mr-1",
+    staticClass: "btn btn-danger ",
     on: {
       "click": _vm.destroy
     }
@@ -50529,7 +50538,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.toggle
     }
   }, [_c('span', {
-    staticClass: "glyphicon glyphicon-heart"
+    staticClass: "fas fa-heart"
   }), _vm._v(" "), _c('span', {
     domProps: {
       "textContent": _vm._s(_vm.count)
@@ -50549,8 +50558,12 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.signedIn) ? _c('div', [_c('div', {
-    staticClass: "form-group"
+  return _c('div', [(_vm.signedIn) ? _c('div', {
+    staticClass: "reply_cnt"
+  }, [_c('div', {
+    staticClass: "reply_background"
+  }, [_c('div', {
+    staticClass: "text_area_sect"
   }, [_c('textarea', {
     directives: [{
       name: "model",
@@ -50558,11 +50571,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.body),
       expression: "body"
     }],
-    staticClass: "form-control",
+    staticClass: "text_area",
     attrs: {
       "name": "body",
       "id": "body",
       "rows": "5",
+      "placeholder": "Kommentieren ...",
       "required": ""
     },
     domProps: {
@@ -50574,7 +50588,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.body = $event.target.value
       }
     }
-  })]), _vm._v(" "), _c('button', {
+  })])]), _vm._v(" "), _c('button', {
     staticClass: "btn btn-default",
     attrs: {
       "type": "submit"

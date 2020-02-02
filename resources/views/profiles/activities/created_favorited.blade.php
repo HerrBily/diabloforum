@@ -7,9 +7,9 @@
        
     @endslot
 
-    @slot('body')
+    <!-- @slot('body')
         {{ $activity->subject->favorited->body }}
-    @endslot
+    @endslot -->
 
 
 @endcomponent

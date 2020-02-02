@@ -1,85 +1,66 @@
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="{{ url('/') }}">
+        <img src="{{ asset('img/diablocom.png') }}" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
 
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Startseite</a>
+            </li>
 
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Diablocom') }}
-            </a>
-        </div>
+            <li class="nav-item">
+                <a class="nav-link" href="/beitraege">Beiträge</a>
+            </li>
 
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Kategorie
+                </a>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="burron" aria-hashpopup="true" aria-expanded="false"> Beiträge suchen <span class="caret"></span></a>
+                <div class="dropdown-menu">
+                    @foreach ($categories as $category)
 
-                    <ul class="dropdown-menu">
-                        <li><a href="/beitraege">Alle Beiträge</a></li>
-
-                        @if (auth()->check())
-                        <li><a href="/beitraege?by={{ auth()->user()->name }}">Meine Beiträge</a></li>
-                        @endif
-
-                        <li><a href="/beitraege?popular=1">Beliebte Beiträge</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="/beitraege/create">Neuer Beitrag</a>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="burron" aria-hashpopup="true" aria-expanded="false">
-                        Kategorien <span class="caret"></span></a>
-
-                    <ul class="dropdown-menu">
-                        @foreach ($categories as $category)
-                        <li><a href="/beitraege/{{ $category->slug }}">{{ $category->name }}</a></li>
-                        @endforeach
-                    </ul>
-                </li>
-            </ul>
-
-            <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Authentication Links -->
-                @if (Auth::guest())
-                <li><a href="{{ route('login') }}">Login</a></li>
-                <li><a href="{{ route('register') }}">Register</a></li>
-                @else
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        {{ Auth::user()->name }} <span class="caret"></span>
+                    <a href="/beitraege/{{ $category->slug }}" class="dropdown-item">
+                        {{ $category->name }}
                     </a>
 
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="{{ route('profile', Auth::user()) }}">Mein Profil</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                Logout
-                            </a>
+                    @endforeach
+                </div>
+            </li> -->
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-                @endif
-            </ul>
-        </div>
+            @if (Auth::guest())
+            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+            @else
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">
+                    {{ Auth::user()->name }} <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="{{ route('profile', Auth::user()) }}">Mein Profil</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            @endif
+
+        </ul>
     </div>
 </nav>
+
+

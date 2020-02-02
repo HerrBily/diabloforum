@@ -1,46 +1,43 @@
 @forelse ($threads as $thread)
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <div class="level">
+<div class="posting_cnt">
+    <div class="row posting_items">
+        <div class="col-lg-2">
+            <h4>
+                <a href="{{ route('profile', $thread->creator) }}">
+                    {{ $thread->creator->name }}
+                </a>
+            </h4>
+            <p class="date">
+                {{ $thread->created_at->format('d.m.y H:i') }}
+            </p>
+        </div>
 
-            <div class="flex">
-                <h4>
+        <div class="col-lg-7 body">
+            <h5>
+                <a href="{{ $thread->path()  }}">
+                    @if (auth()->check() && $thread->hasUpdatesFor(auth()->user()))
+                    {{ $thread->title }}
+                    @else
+                    {{ $thread->title }}
 
-                    <a href="{{ $thread->path()  }}">
+                    @endif
+                </a>
+            </h5>
 
-                        @if (auth()->check() && $thread->hasUpdatesFor(auth()->user()))
-                        <strong>
-                            {{ $thread->title }}
-                        </strong>
-                        @else
-                        {{ $thread->title }}
+            <p>
+                {{ $thread->body }}
+            </p>
+           
 
-                        @endif
-
-                    </a>
-                </h4>
-
-                <h5>
-                    Erstellt von:
-                    <a href="{{ route('profile', $thread->creator) }}">
-                        {{ $thread->creator->name }}
-                    </a>
-                </h5>
-            </div>
-
+        </div>
+        <div class="col-lg-2 comments">
+            <a href="{{ $thread->path() }}"> {{ $thread->category->name }}</a>
             <a href="{{ $thread->path() }}">
                 {{ $thread->replies_count }} {{ str_plural('Kommentar', $thread->replies_count) }}
             </a>
         </div>
     </div>
-
-    <div class="panel-body">
-
-        <div class="body text-truncate">
-            {{ $thread->body }}
-        </div>
-    </div>
 </div>
 @empty
-    <p>Keine Beiträge gerade vorhanden </p>
+<p>Keine Beiträge gerade vorhanden </p>
 @endforelse

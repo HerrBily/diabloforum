@@ -1,0 +1,92 @@
+body {
+        background-color: $body-bg;
+
+        p {
+            font-family: $font-family-sans-serif;
+            color: #fff;
+        }
+
+  a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  h5 {
+    font-family: 'zorqueregular';
+  }
+
+  .welcome_btn_cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+
+        .welcome_btn {
+            border: 1px solid #b3cfdd;
+            padding: 0.8rem 2.6rem;
+            text-align: center;
+            color: #b3cfdd;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+        }
+  }
+
+  .new_btn_cnt {
+    display: flex;
+    justify-content: end;
+    padding: 5rem 0;
+    margin: 0 auto;
+    width: 80%;
+      
+        .new_btn {
+            border: 1px solid #fff;
+            padding: 0.5rem 2.6rem;
+            text-align: center;
+            color: #fff;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 18px;
+        }
+}
+
+.nav-item {
+    padding-right: 3rem;
+}
+
+  .nav-link {
+    font-family: 'zorqueregular';
+    color: #fff !important;
+    font-size: 20px;
+  }
+
+  
+  .nav-link:hover {
+      color: rgb(133, 31, 31) !important;
+  }
+
+  .navbar-brand {
+      img {
+          width: 8rem;
+      }
+  }
+
+  .diablo_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      line-height: 3rem;
+
+  }
+
+  .diablo_header {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 3rem;
+
+  }
+
+}
+
+
+

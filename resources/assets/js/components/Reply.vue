@@ -1,37 +1,38 @@
 <template>
-  <div :id="'reply-'+id" class="panel panel-default">
+  <div :id="'reply-'+id" class="panel panel-default replies_background">
     <div class="panel-heading">
-      <div class="level">
-        <h5 class="flex">
-          <a :href="'/profiles/'+data.owner.name" v-text="data.owner.name"></a>
-          sagte: <span v-text="ago"></span>
-        </h5>
-
-        <div v-if="signedIn">
+      <div class="replies_cnt">
+        <div class="replies_items">
+          <h5>
+            <a :href="'/profiles/'+data.owner.name" v-text="data.owner.name"></a>
+          </h5>
+          <p v-text="ago"></p>
+        </div>
+        <div class="favorite_btn" v-if="signedIn">
             <favorite :reply="data"></favorite>
         </div>
-
       </div>
+      <div class="panel-body">
+        <div v-if="editing">
+          <form @submit="update">
+            <div class="form-group">
+              <textarea class="form-control" v-model="body" required></textarea>
+            </div>
+            
+            <button class="btn btn-xs btn-primary">Update</button>
+            <button class="btn btn-xs btn-link" @click="editing = false" type="button">Abbruch</button>
+          </form>
+        </div>
+
+        <p v-else v-text="body"></p>
     </div>
 
-    <div class="panel-body">
-      <div v-if="editing">
-        <form @submit="update">
-          <div class="form-group">
-            <textarea class="form-control" v-model="body" required></textarea>
-          </div>
-          
-          <button class="btn btn-xs btn-primary">Update</button>
-          <button class="btn btn-xs btn-link" @click="editing = false" type="button">Abbruch</button>
-        </form>
-      </div>
-
-      <div v-else v-text="body"></div>
     </div>
+
     
-    <div class="panel-footer level" v-if="canUpdate">
-      <button class="btn btn-xs mr-1" @click="editing= true ">Bearbeiten</button>
-      <button class="btn btn-xs btn-danger mr-1" @click="destroy">Löschen</button>
+    <div class="panel-footer" v-if="canUpdate">
+      <button class="btn " @click="editing= true ">Bearbeiten</button>
+      <button class="btn btn-danger " @click="destroy">Löschen</button>
     </div>
      
   </div>
@@ -61,7 +62,7 @@ export default {
   computed: {
 
       ago() {
-        return moment(this.data.created_at).fromNow() +'...';
+        return this.data.created_at;
       },
 
       signedIn() {
