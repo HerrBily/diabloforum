@@ -35,7 +35,7 @@ body .welcome_btn_cnt .welcome_btn {
 }
 body .new_btn_cnt {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 5rem 0;
   margin: 0 auto;
   width: 80%;
@@ -99,7 +99,7 @@ body .diablo_header {
 }
 
 .index_header_img img {
-  width: -moz-available;
+  width: 100%;
 }
 
 .main_cnt {
@@ -115,8 +115,12 @@ body .diablo_header {
 .diablo-cnt {
   padding-bottom: 5rem;
 }
-.diablo-cnt img {
+.diablo-cnt div {
   padding-bottom: 2rem;
+  width: 30%;
+}
+.diablo-cnt div img {
+  width: 100%;
 }
 .diablo-cnt h2 {
   color: #fff;
@@ -125,6 +129,11 @@ body .diablo_header {
 .diablo_img {
   text-align: center;
   padding-bottom: 5rem;
+  margin: 0 auto;
+  width: 40%;
+}
+.diablo_img img {
+  width: 100%;
 }
 
 .body {
@@ -158,11 +167,12 @@ body .diablo_header {
   display: flex;
   align-items: center;
 }
-.comments a {
-  padding: 0 2.5rem;
+.comments a:first-child {
+  padding-right: 2.5rem;
 }
 .comments a:nth-child(2) {
   border-left: 1px solid #fff;
+  padding-left: 2.5rem;
 }
 
 .show_img_cnt {
@@ -270,6 +280,53 @@ body .diablo_header {
 }
 .panel .panel-footer button:nth-child(1) {
   color: #fff;
+}
+
+.login_img_cnt img {
+  width: 100%;
+}
+
+.login_cnt {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+.login_cnt .panel-body {
+  flex-basis: 50%;
+}
+.login_cnt .panel-body h2 {
+  font-family: "zorqueregular";
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.login_cnt form .textfield {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+.login_cnt form .textfield label {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.login_cnt form .textfield input {
+  background-color: #000;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 60%;
+  padding-bottom: 0.5rem;
+  color: #fff;
+  outline: none;
+}
+.login_cnt .register_sctn {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=app.css.map */

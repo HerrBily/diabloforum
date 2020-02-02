@@ -1,7 +1,7 @@
 .index_header_img {
-    img {
-        width: -moz-available;
-    }
+   img {
+       width: 100%;
+   }
 }
 
 .main_cnt {
@@ -18,9 +18,15 @@
 .diablo-cnt {
     padding-bottom: 5rem;
 
-    img {
+    div {
         padding-bottom: 2rem;
+        width: 30%;
+        
+        img {
+            width: 100%;
+        }
     }
+
 
     h2 {
         color: #fff;
@@ -30,6 +36,12 @@
 .diablo_img {
     text-align: center;
     padding-bottom: 5rem;
+    margin: 0 auto;
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
 }
 
 .body {
@@ -68,13 +80,13 @@
     
     align-items: center;
 
-    a {
-        padding: 0 2.5rem;
+    a:first-child {
+        padding-right: 2.5rem;
     }
 
     a:nth-child(2) {
         border-left: 1px solid #fff;
-        // padding-left: 2.5rem;
+        padding-left: 2.5rem;
     }
 }
 

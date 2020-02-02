@@ -17,7 +17,9 @@
     <img src="img/diablo-header.png" alt="">
 </div>
 <div class="container diablo-cnt">
-    <img src="img/diablocom.png" alt="">
+    <div>
+        <img src="img/diablocom.png" alt="">
+    </div>
     <h2>Das Communityforum für Diablo</h2>
 </div>
 <div class="diablo_img">
