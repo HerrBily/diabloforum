@@ -637,6 +637,22 @@ body .diablo_header {
   font-family: "Ubuntu", sans-serif;
 }
 
+.welcome_cnt {
+  padding: 5rem 0;
+}
+.welcome_cnt p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "zorqueregular";
+}
+
+.welcome_img {
+  padding-bottom: 2rem;
+}
+.welcome_img img {
+  width: 100%;
+}
+
 footer {
   padding: 2rem 0;
   box-shadow: 0 0 20px 0 #434343;

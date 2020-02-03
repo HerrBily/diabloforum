@@ -1,23 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<div class="container welcome_cnt">
+    <p>Willkommen bei Diablocom {{ Auth::user()->name }}</p>
+   
 
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+    @if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
     </div>
+    @endif
 </div>
+<div class="welcome_img">
+    <img src="{{ asset('img/diablo-welcome.png') }}" alt="Diablo 3 Bild mit Endboss Reaper">
+</div>
+
+
+
+
 @endsection
