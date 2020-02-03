@@ -53,17 +53,6 @@
 
         {{ $replies->links() }}
 
-        <!-- <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    Der Beitrag wurde {{ $thread->created_at->diffForHumans() }} von
-                    <a href="#">{{ $thread->creator->name }}</a>, und
-                    hat <span v-text="repliesCount"></span>{{ str_plural('Kommentar', $thread->replies_count) }}.
-                </div>
-            </div>
-        </div> -->
-
-
     </div>
 
 
