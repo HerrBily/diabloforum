@@ -22,3 +22,16 @@
 .navbar-toggler {
     border: none;
 }
+
+.dropdown-menu {
+    background-color: #000;
+    border: 1px solid #fff;
+
+    li {
+        padding: 1rem .5rem;
+
+        a {
+            font-family: 'zorqueregular';
+        }
+    }
+}

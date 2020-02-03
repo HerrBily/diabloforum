@@ -1,0 +1,95 @@
+.porfile_diablo_logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+
+.profile_cnt {
+    padding-top: 4rem;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    .profile_name {
+        display: flex;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #fff;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        h3 {
+            color: #fff;
+            font-family: 'zorqueregular';
+            padding-right: 15rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-family: $font-family-sans-serif;
+        }
+        
+        
+    }
+
+    .profile_items {
+        display: flex;
+        padding: 4rem 0;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        h4 {
+            color: #fff;
+            font-family: 'zorqueregular';
+            padding-right: 15rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-family: $font-family-sans-serif;
+        }
+        
+    }
+
+    .profile_leer {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .datum {
+        color: #fff;
+        font-family: $font-family-sans-serif;
+        padding: 2rem 0;
+    }
+
+
+    
+
+    .activity_cnt {
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+            padding-right: 1rem;
+            margin: 0;
+        }
+        
+
+        .activity_items {
+            font-family: $font-family-sans-serif;
+            font-size: 1.5rem;
+            border-bottom: 1px solid #fff;
+           
+        }
+    }
+
+    .activity_cnt:nth-child(odd) {
+        background-color: #161616;
+    }
+
+} 

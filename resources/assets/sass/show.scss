@@ -14,7 +14,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
-        padding: 3rem 0;
+        padding-top: 3rem;
         align-items: center;
 
         .profil_cnt {
@@ -27,10 +27,29 @@
     }
 }
 
+.posting_delete {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.5rem 0;
+
+    button {
+        font-family: $font-family-sans-serif;
+        font-size: 1rem;
+        background-color: #161616;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+}
+
 .comment_header {
     padding: 3rem 0 1rem 0;
     margin: 0 auto;
-    width: 90%;
+    width: 88%;
+    font-family: $font-family-sans-serif;
+    font-size: 1.2rem;
 }
 
 .new_reply_cnt {
@@ -81,7 +100,7 @@
 }
 
 .panel {
-    padding-top: 2rem;
+    padding-top: 3rem;
     
 
     .panel-heading {
@@ -116,10 +135,19 @@
         display: flex;
         margin: 0 auto;
         width: 80%;
-        justify-content: end;
+        justify-content: flex-end;
+        padding-top: 1rem;
+
+        .reply_delete_btn {
+            background: #000;
+            border: none;
+            color: #fff;
+        }
 
         button:nth-child(1) {
             color: #fff;
+            border: 1px solid #b3cfdd;
+            color: #b3cfdd;
         }
     }
 }

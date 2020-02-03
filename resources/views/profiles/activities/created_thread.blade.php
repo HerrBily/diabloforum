@@ -1,8 +1,10 @@
 @component('profiles.activities.activity')
 
     @slot('heading')
-        {{ $profileUser->name }} hat einen Beitrag erstellt
-        <a href="{{ $activity->subject->path() }}">
+        <p>
+            {{ $profileUser->name }} hat einen Beitrag erstellt
+        </p>
+        <a href="{{ $activity->subject->path() }}" class="activity_items">
             {{ $activity->subject->title }}
         </a>
     @endslot

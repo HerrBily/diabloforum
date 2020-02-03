@@ -33,7 +33,7 @@
         <div class="col-lg-3 comments">
             <a href="{{ $thread->path() }}"> {{ $thread->category->name }}</a>
             <a href="{{ $thread->path() }}">
-                {{ $thread->replies_count }} {{ str_plural('Kommentar', $thread->replies_count) }}
+                {{ $thread->replies_count }} {{ 'Kommentare', $thread->replies_count }}
             </a>
         </div>
     </div>

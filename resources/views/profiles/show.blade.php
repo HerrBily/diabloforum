@@ -1,31 +1,39 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="page-header">
-                <h3>
-                    Name
-                </h3>
-                <h4>
-                    {{ $profileUser->name }}
-                </h4>
-                <p>Mitglied seit: {{ $profileUser->created_at}}</p>
-            </div>
 
-            @forelse ($activities as $date => $activity)
-                <h3 class="page-header">{{ $date }}</h3>
 
-                @foreach($activity as $record)
-                    @if (view()->exists("profiles.activities.{$record->type}"))
-                        @include ("profiles.activities.{$record->type}", ['activity' => $record])
-                    @endif
-                @endforeach
-            @empty
-                <p>Dein Profil ist leer. Erstelle einen Beitrag oder kommentiere etwas!</p>
-            @endforelse
+    <img src="{{ asset('img/diablo-logo-show.png') }}" class="porfile_diablo_logo" alt="">
+
+
+<div class="profile_cnt">
+
+    <div class="">
+        <div class="profile_name">
+            <h3>
+                Name
+            </h3>
+            <p>
+                {{ $profileUser->name }}
+            </p>
+        </div>
+        <div class="profile_items">
+            <h4>Mitglied seit:</h4>
+            <p>{{ $profileUser->created_at}}</p>
         </div>
     </div>
+
+    @forelse ($activities as $date => $activity)
+    <h4 class="datum">{{ $date }}</h4>
+
+    @foreach($activity as $record)
+        @if (view()->exists("profiles.activities.{$record->type}"))
+            @include ("profiles.activities.{$record->type}", ['activity' => $record])
+        @endif
+    @endforeach
+    @empty
+        <p class="profile_leer">Dein Profil ist leer. Erstelle einen Beitrag oder kommentiere etwas!</p>
+    @endforelse
+
 </div>
 @endsection

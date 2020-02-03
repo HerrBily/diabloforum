@@ -31,8 +31,8 @@
 
     
     <div class="panel-footer" v-if="canUpdate">
-      <button class="btn " @click="editing= true ">Bearbeiten</button>
-      <button class="btn btn-danger " @click="destroy">Löschen</button>
+      <button class="btn" @click="editing= true ">Bearbeiten</button>
+      <button class="reply_delete_btn" @click="destroy">Löschen</button>
     </div>
      
   </div>

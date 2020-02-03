@@ -1,8 +1,10 @@
 @component('profiles.activities.activity')
 
     @slot('heading')
-        {{ $profileUser->name }} kommentierte den Beitrag von
-        <a href="{{ $activity->subject->thread->path() }}">
+        <p>
+            {{ $profileUser->name }} kommentierte den Beitrag von
+        </p>
+        <a href="{{ $activity->subject->thread->path() }}" class="activity_items">
             {{ $activity->subject->thread->title }}
         </a>
     @endslot

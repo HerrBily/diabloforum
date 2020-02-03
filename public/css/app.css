@@ -98,6 +98,17 @@ body .diablo_header {
   border: none;
 }
 
+.dropdown-menu {
+  background-color: #000;
+  border: 1px solid #fff;
+}
+.dropdown-menu li {
+  padding: 1rem 0.5rem;
+}
+.dropdown-menu li a {
+  font-family: "zorqueregular";
+}
+
 .index_header_img img {
   width: 100%;
 }
@@ -111,7 +122,24 @@ body .diablo_header {
   flex-direction: column;
   padding-bottom: 4rem;
 }
-
+.main_cnt .category_cnt .all_posting_btn {
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.main_cnt .category_cnt .category_btn {
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  word-wrap: break-word;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
 .diablo-cnt {
   padding-bottom: 5rem;
 }
@@ -190,7 +218,7 @@ body .diablo_header {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  padding: 3rem 0;
+  padding-top: 3rem;
   align-items: center;
 }
 .show_cnt .show_beitrag .profil_cnt {
@@ -200,10 +228,28 @@ body .diablo_header {
   text-align: center;
 }
 
+.posting_delete {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.5rem 0;
+}
+.posting_delete button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  background-color: #161616;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
 .comment_header {
   padding: 3rem 0 1rem 0;
   margin: 0 auto;
-  width: 90%;
+  width: 88%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
 }
 
 .new_reply_cnt {
@@ -248,7 +294,7 @@ body .diablo_header {
 }
 
 .panel {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .panel .panel-heading {
   display: flex;
@@ -276,10 +322,93 @@ body .diablo_header {
   display: flex;
   margin: 0 auto;
   width: 80%;
-  justify-content: end;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+.panel .panel-footer .reply_delete_btn {
+  background: #000;
+  border: none;
+  color: #fff;
 }
 .panel .panel-footer button:nth-child(1) {
   color: #fff;
+  border: 1px solid #b3cfdd;
+  color: #b3cfdd;
+}
+
+.porfile_diablo_logo {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+.profile_cnt {
+  padding-top: 4rem;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.profile_cnt .profile_name {
+  display: flex;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #fff;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.profile_cnt .profile_name h3 {
+  color: #fff;
+  font-family: "zorqueregular";
+  padding-right: 15rem;
+}
+.profile_cnt .profile_name p {
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.profile_cnt .profile_items {
+  display: flex;
+  padding: 4rem 0;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.profile_cnt .profile_items h4 {
+  color: #fff;
+  font-family: "zorqueregular";
+  padding-right: 15rem;
+}
+.profile_cnt .profile_items p {
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.profile_cnt .profile_leer {
+  text-align: center;
+  padding: 2rem 0;
+}
+.profile_cnt .datum {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  padding: 2rem 0;
+}
+.profile_cnt .activity_cnt {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile_cnt .activity_cnt p {
+  padding-right: 1rem;
+  margin: 0;
+}
+.profile_cnt .activity_cnt .activity_items {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #fff;
+}
+.profile_cnt .activity_cnt:nth-child(odd) {
+  background-color: #161616;
 }
 
 .login_img_cnt img {

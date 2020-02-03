@@ -50503,14 +50503,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])]), _vm._v(" "), (_vm.canUpdate) ? _c('div', {
     staticClass: "panel-footer"
   }, [_c('button', {
-    staticClass: "btn ",
+    staticClass: "btn",
     on: {
       "click": function($event) {
         _vm.editing = true
       }
     }
   }, [_vm._v("Bearbeiten")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-danger ",
+    staticClass: "reply_delete_btn",
     on: {
       "click": _vm.destroy
     }

@@ -40,7 +40,7 @@
             <div class="checkbox">
                 <label>
                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> 
-                    Erinnere dich
+                    Angemeldet bleiben
                 </label>
             </div>
 

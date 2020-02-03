@@ -12,7 +12,35 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 4rem;
+
+        .all_posting_btn {
+            border: 1px solid grey;
+                border-radius: 5px;
+                text-align: center;
+                padding: 0.7rem 2rem;
+                font-size: 1.2rem;
+                font-family: $font-family-sans-serif;
+        }
+
+
+        .category_btn {
+
+            border: 1px solid grey;
+            border-radius: 5px;
+            display: inline-flex;
+            justify-content: center;
+            word-wrap: break-word;
+            padding: 0.7rem 2rem;
+            font-size: 1.2rem;
+            font-family: $font-family-sans-serif;
+            
+            a {
+                
+            }
+        }
     }
+
+
 }
 
 .diablo-cnt {

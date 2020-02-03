@@ -31,22 +31,21 @@
                     <p>
                         {{ $thread->body }}
                     </p>
-                    @can ('update', $thread)
-                    <form action="{{ $thread->path() }}" method="POST">
-                        {{ csrf_field() }}
-                        {{ method_field('DELETE') }}
-
-                        <button type="submit" class="">Beitrag löschen</button>
-                    </form>
-                    @endcan
                 </div>
             </div>
+            @can ('update', $thread)
+            <form action="{{ $thread->path() }}" method="POST" class="posting_delete">
+                {{ csrf_field() }}
+                {{ method_field('DELETE') }}
+
+                <button type="submit">Beitrag löschen</button>
+            </form>
+            @endcan
 
         </div>
         <p class="comment_header">Kommentare</p>
         <div class="col-lg-12 new_reply_cnt">
          
-                <a href="{{ route('profile', $thread->creator) }}">{{ $thread->creator->name }}</a>
                 <replies :data="{{ $thread->replies }}" @added="repliesCount++" @removed="repliesCount--"></replies>
             
             

@@ -1,13 +1,11 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <div class="level">
-            <span class="flex">
-              {{ $heading }}
-            </span>
-        </div>
-    </div>
+<div class="activity_cnt">
 
-    <!-- <div class="panel-body">
+
+    {{ $heading }}
+
+
+</div>
+
+<!-- <div class="panel-body">
         {{ $body }}
     </div> -->
-</div>
