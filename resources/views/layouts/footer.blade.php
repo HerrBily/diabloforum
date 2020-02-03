@@ -1,23 +1,31 @@
-<!-- <footer class="page-footer font-small dark">
-    <div class="row">
-        <div class="col flex-center">
+<footer>
+    <div class="container">
+        <div class="row footer_cnt">
+            <div class="footer_contact col-lg-4">
 
-            <a href="#">
-                Kontakt
-            </a>
+                <a href="#">
+                    Kontakt
+                </a>
 
-            <a href="#">
-                Impressum
-            </a>
-        </div>
+                <a href="#">
+                    Impressum
+                </a>
+            </div>
 
-        <div class="col flex-center">
-            <a href="/">
-                <img src="img/diablocom.png" alt="">
-            </a>
-        </div>
-        <div class="col flex-center">
+            <div class="footer_logo_img col-lg-4">
+                <a href="/">
+                    <img src="{{ asset('img/diablo-logo-footer.png') }}" alt="">
+                </a>
+            </div>
+            <div class="footer_social_media col-lg-4">
+                <a href="">
+                    <img src="{{ asset('img/facebook.png') }}" alt="">
+                </a>
+                <a href="">
+                    <img src="{{ asset('img/instagram.png') }}" alt="">
+                </a>
 
+            </div>
         </div>
     </div>
-</footer> -->
+</footer>

@@ -1,0 +1,31 @@
+footer {
+    padding: 2rem 0;
+    box-shadow: 0 0 20px 0 #434343;
+
+    .footer_cnt {
+        align-items: center;
+        text-align: center;
+
+        .footer_contact {
+            padding-bottom: 1.5rem;
+            
+
+            a:first-child {
+                padding-right: 4rem;
+            }
+        }
+
+        .footer_logo_img {
+            padding-bottom: 1.5rem;
+        }
+
+
+        .footer_social_media {
+            padding-bottom: 1.5rem;
+
+            a:first-child {
+                padding-right: 4rem;
+            }
+        }
+    }
+}

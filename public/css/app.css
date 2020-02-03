@@ -23,7 +23,7 @@ body .welcome_btn_cnt {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
 }
 body .welcome_btn_cnt .welcome_btn {
   border: 1px solid #b3cfdd;
@@ -115,6 +115,30 @@ body .diablo_header {
 }
 .dropdown-menu li a {
   font-family: "zorqueregular";
+}
+
+footer {
+  padding: 2rem 0;
+  box-shadow: 0 0 20px 0 #434343;
+}
+footer .footer_cnt {
+  align-items: center;
+  text-align: center;
+}
+footer .footer_cnt .footer_contact {
+  padding-bottom: 1.5rem;
+}
+footer .footer_cnt .footer_contact a:first-child {
+  padding-right: 4rem;
+}
+footer .footer_cnt .footer_logo_img {
+  padding-bottom: 1.5rem;
+}
+footer .footer_cnt .footer_social_media {
+  padding-bottom: 1.5rem;
+}
+footer .footer_cnt .footer_social_media a:first-child {
+  padding-right: 4rem;
 }
 
 .index_header_img img {
@@ -429,11 +453,9 @@ body .diablo_header {
   width: 90%;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
-.login_cnt .panel-body {
-  width: 23%;
-}
-.login_cnt .panel-body h2 {
+.login_cnt .login_form h2 {
   font-family: "zorqueregular";
   color: #fff;
   padding-bottom: 1rem;
@@ -468,6 +490,7 @@ body .diablo_header {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+  align-items: center;
 }
 .login_cnt form .login_btn button {
   border: 1px solid #fff;

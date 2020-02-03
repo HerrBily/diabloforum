@@ -6,7 +6,7 @@
     <img src="{{ asset('img/login-header.png') }}" alt="">
 </div>
 <div class="login_cnt">
-    <div class="panel-body">
+    <div class="col-lg-4 login_form">
         <h2>Login</h2>
         <form class="" method="POST" action="{{ route('login') }}">
             {{ csrf_field() }}
@@ -58,7 +58,7 @@
         </form>
 
     </div>
-    <div class="register_sctn">
+    <div class="register_sctn col-lg-6">
         <p>Ich habe noch keinen Account</p>
         <a href="{{ route('register') }}">Registrieren</a>
     </div>
