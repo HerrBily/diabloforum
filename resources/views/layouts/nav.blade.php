@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <a class="navbar-brand" href="{{ url('/') }}">
-        <img src="{{ asset('img/diablocom.png') }}" alt="logo">
+        <img src="{{ asset('img/diablocom.png') }}" alt="Das Logo von Diablocom">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -15,22 +15,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/beitraege">Beiträge</a>
             </li>
-
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    Kategorie
-                </a>
-
-                <div class="dropdown-menu">
-                    @foreach ($categories as $category)
-
-                    <a href="/beitraege/{{ $category->slug }}" class="dropdown-item">
-                        {{ $category->name }}
-                    </a>
-
-                    @endforeach
-                </div>
-            </li> -->
 
             @if (Auth::guest())
             <li class="nav-item login_nav_item"><a href="{{ route('login') }}" class="nav-link login_nav">Login</a></li>

@@ -4,7 +4,7 @@
 <thread-view :init-replies-count="{{ $thread->replies_count }}" inline-template>
     <div>
         <div class="show_img_cnt">
-            <img src="{{ asset('img/diablo-logo-show.png') }}" alt="">
+            <img src="{{ asset('img/diablo-logo-show.png') }}" alt="Das Logo von Diablo 3 Reaper of Souls">
         </div>
         <div class="col-lg-12 show_cnt">
 

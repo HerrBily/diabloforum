@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <img src="{{ asset('img/diablo-logo-show.png') }}" class="porfile_diablo_logo" alt="">
+    <img src="{{ asset('img/diablo-logo-show.png') }}" class="porfile_diablo_logo" alt="Das Logo von DIablo 3 Reaper of Souls">
 
 
 <div class="profile_cnt">

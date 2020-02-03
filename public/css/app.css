@@ -207,6 +207,12 @@ body .diablo_header {
   margin: 0 auto;
   width: 90%;
 }
+.beitrag_cnt p {
+  font-size: 1.8rem;
+  font-family: "zorqueregular";
+  text-align: center;
+  padding-top: 4rem;
+}
 
 .posting_cnt:nth-child(odd) {
   background-color: #161616;
@@ -236,6 +242,16 @@ body .diablo_header {
 .comments a:nth-child(2) {
   border-left: 1px solid #fff;
   padding-left: 2.5rem;
+}
+
+.text-center a {
+  text-decoration: none !important;
+  color: #fff !important;
+  border-bottom: 1px solid #fff;
+}
+.text-center a:hover {
+  color: #a71717 !important;
+  border-bottom: 1px solid #a71717;
 }
 
 .show_img_cnt {

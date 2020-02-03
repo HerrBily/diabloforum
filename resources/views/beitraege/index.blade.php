@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="index_header_img">
-    <img src="{{ asset('img/diablobeitrag.png') }}" alt="">
+    <img src="{{ asset('img/diablobeitrag.png') }}" alt="Ein großes Header Bild mit dem Enboss Reaper abgebildet">
 </div>
 <div>
     <div class="new_btn_cnt">

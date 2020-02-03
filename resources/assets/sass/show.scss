@@ -1,3 +1,19 @@
+.text-center {
+
+    a {
+        text-decoration: none !important;
+        color: #fff !important;
+        border-bottom: 1px solid #fff;
+    }
+
+    a:hover {
+        color: rgb(167, 23, 23) !important;
+        border-bottom: 1px solid rgb(167, 23, 23);
+
+    }
+}
+
+
 .show_img_cnt {
     text-align: center;
     padding: 4rem 0;
