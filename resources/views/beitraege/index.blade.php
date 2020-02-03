@@ -6,11 +6,11 @@
 </div>
 <div>
     <div class="new_btn_cnt">
-        <a href="/beitraege/create" class="new_btn">Neuer Beitrag</a>
+        <a href="/beitraege/create" class="new_btn"><span class="fas fa-plus"></span> Neuer Beitrag</a>
     </div>
 </div>
 
-<section class="col-lg-11 main_cnt">
+<section class="col-lg-12 main_cnt">
     <div class="col-lg-2 category_cnt">
         
         <a href="/beitraege" class="all_posting_btn">Alle Beiträge</a>

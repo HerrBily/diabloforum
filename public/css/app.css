@@ -42,11 +42,14 @@ body .new_btn_cnt {
 }
 body .new_btn_cnt .new_btn {
   border: 1px solid #fff;
-  padding: 0.5rem 2.6rem;
+  padding: 0.5rem 2rem;
   text-align: center;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
+}
+body .new_btn_cnt .new_btn span {
+  padding-right: 0.5rem;
 }
 body .nav-item {
   padding-right: 3rem;
@@ -83,6 +86,11 @@ body .diablo_header {
 .bg-dark {
   background-color: #000 !important;
   box-shadow: 0 0 20px 0 #434343;
+}
+
+.login_nav {
+  border: 1px solid #fff;
+  border-radius: 5px;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -173,7 +181,7 @@ body .diablo_header {
 
 .beitrag_cnt {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .posting_cnt:nth-child(odd) {

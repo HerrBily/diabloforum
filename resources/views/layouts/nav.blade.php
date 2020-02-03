@@ -33,8 +33,7 @@
             </li> -->
 
             @if (Auth::guest())
-            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link login_nav">Login</a></li>
             @else
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">

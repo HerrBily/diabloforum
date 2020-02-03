@@ -40,11 +40,15 @@ body {
       
         .new_btn {
             border: 1px solid #fff;
-            padding: 0.5rem 2.6rem;
+            padding: 0.5rem 2rem;
             text-align: center;
             color: #fff;
             font-family: 'Ubuntu', sans-serif;
             font-size: 18px;
+
+            span {
+                padding-right: .5rem;
+            }
         }
 }
 
