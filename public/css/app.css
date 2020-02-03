@@ -51,6 +51,26 @@ body .new_btn_cnt .new_btn {
 body .new_btn_cnt .new_btn span {
   padding-right: 0.5rem;
 }
+body .nav-link:hover {
+  color: #b3cfdd !important;
+}
+body .login_nav:hover {
+  border: 1px solid #b3cfdd;
+  color: #b3cfdd;
+}
+body .welcome_btn:hover {
+  background-color: #b3cfdd;
+  color: #000;
+  text-decoration: none;
+}
+body .all_posting_btn:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+body .category_cnt a:hover {
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
 body .nav-item {
   padding-right: 3rem;
 }
@@ -58,9 +78,6 @@ body .nav-link {
   font-family: "zorqueregular";
   color: #fff !important;
   font-size: 20px;
-}
-body .nav-link:hover {
-  color: #851f1f !important;
 }
 body .navbar-brand img {
   width: 8rem;
@@ -117,30 +134,6 @@ body .diablo_header {
   font-family: "zorqueregular";
 }
 
-footer {
-  padding: 2rem 0;
-  box-shadow: 0 0 20px 0 #434343;
-}
-footer .footer_cnt {
-  align-items: center;
-  text-align: center;
-}
-footer .footer_cnt .footer_contact {
-  padding-bottom: 1.5rem;
-}
-footer .footer_cnt .footer_contact a:first-child {
-  padding-right: 4rem;
-}
-footer .footer_cnt .footer_logo_img {
-  padding-bottom: 1.5rem;
-}
-footer .footer_cnt .footer_social_media {
-  padding-bottom: 1.5rem;
-}
-footer .footer_cnt .footer_social_media a:first-child {
-  padding-right: 4rem;
-}
-
 .index_header_img img {
   width: 100%;
 }
@@ -148,6 +141,7 @@ footer .footer_cnt .footer_social_media a:first-child {
 .main_cnt {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
 .main_cnt .category_cnt {
   display: flex;
@@ -157,6 +151,7 @@ footer .footer_cnt .footer_social_media a:first-child {
 .main_cnt .category_cnt .all_posting_btn {
   border: 1px solid grey;
   border-radius: 5px;
+  color: grey;
   text-align: center;
   padding: 0.7rem 2rem;
   font-size: 1.2rem;
@@ -165,6 +160,7 @@ footer .footer_cnt .footer_social_media a:first-child {
 .main_cnt .category_cnt .category_btn {
   border: 1px solid grey;
   border-radius: 5px;
+  color: grey;
   display: inline-flex;
   justify-content: center;
   word-wrap: break-word;
@@ -172,6 +168,10 @@ footer .footer_cnt .footer_social_media a:first-child {
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+.main_cnt .category_cnt .category_btn p {
+  margin: 0;
+}
+
 .diablo-cnt {
   padding-bottom: 5rem;
 }
@@ -220,6 +220,9 @@ footer .footer_cnt .footer_social_media a:first-child {
   width: 95%;
   align-items: center;
   padding-top: 1rem;
+}
+.posting_cnt .posting_items a {
+  color: #fff !important;
 }
 
 .comments {
@@ -277,11 +280,11 @@ footer .footer_cnt .footer_social_media a:first-child {
 }
 
 .comment_header {
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0;
   margin: 0 auto;
   width: 88%;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .new_reply_cnt {
@@ -321,6 +324,10 @@ footer .footer_cnt .footer_social_media a:first-child {
   margin: 1rem;
 }
 
+.replies_background {
+  padding-bottom: 3rem;
+}
+
 .replies_background:nth-child(even) {
   background-color: #161616;
 }
@@ -340,6 +347,9 @@ footer .footer_cnt .footer_social_media a:first-child {
 }
 .panel .panel-heading .replies_cnt .replies_items {
   display: flex;
+}
+.panel .panel-heading .replies_cnt .replies_items a {
+  color: #fff !important;
 }
 .panel .panel-heading .replies_cnt .replies_items h5 {
   padding-right: 1rem;
@@ -368,6 +378,84 @@ footer .footer_cnt .footer_social_media a:first-child {
   color: #b3cfdd;
 }
 
+.create_cnt {
+  margin: 0 auto;
+  width: 85%;
+  padding: 5rem 0;
+}
+.create_cnt h3 {
+  color: #fff;
+  font-family: "zorqueregular";
+}
+.create_cnt form {
+  padding: 2rem 0;
+}
+.create_cnt form label {
+  padding-bottom: 1.5rem;
+}
+.create_cnt form .category_input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.create_cnt form .category_input label {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.create_cnt form .category_input select {
+  width: 90%;
+  border: none;
+  padding: 1rem 0;
+}
+.create_cnt form .titel_input {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+.create_cnt form .titel_input label {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.create_cnt form .titel_input input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: #000;
+  width: 90%;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+  padding: 0.5rem;
+}
+.create_cnt form .text_input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.create_cnt form .text_input label {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.create_cnt form .text_input textarea {
+  background-color: #161616;
+  border: 1px solid #161616;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0.5rem;
+  outline: none;
+}
+.create_cnt form .create_btn button {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.6rem 4rem;
+  background-color: #000;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .porfile_diablo_logo {
   display: flex;
   align-items: center;
@@ -376,7 +464,7 @@ footer .footer_cnt .footer_social_media a:first-child {
 }
 
 .profile_cnt {
-  padding-top: 4rem;
+  padding: 4rem 0;
   margin: 0 auto;
   width: 60%;
   display: flex;
@@ -438,6 +526,8 @@ footer .footer_cnt .footer_social_media a:first-child {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
   border-bottom: 1px solid #fff;
+  color: #fff;
+  text-decoration: none !important;
 }
 .profile_cnt .activity_cnt:nth-child(odd) {
   background-color: #161616;
@@ -500,6 +590,12 @@ footer .footer_cnt .footer_social_media a:first-child {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
 }
+.login_cnt form .login_btn button:hover {
+  margin: 0;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 260px;
+}
 .login_cnt form .login_btn a {
   padding-top: 1rem;
 }
@@ -523,6 +619,30 @@ footer .footer_cnt .footer_social_media a:first-child {
   background-color: #000;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
+}
+
+footer {
+  padding: 2rem 0;
+  box-shadow: 0 0 20px 0 #434343;
+}
+footer .footer_cnt {
+  align-items: center;
+  text-align: center;
+}
+footer .footer_cnt .footer_contact {
+  padding-bottom: 1.5rem;
+}
+footer .footer_cnt .footer_contact a:first-child {
+  padding-right: 4rem;
+}
+footer .footer_cnt .footer_logo_img {
+  padding-bottom: 1.5rem;
+}
+footer .footer_cnt .footer_social_media {
+  padding-bottom: 1.5rem;
+}
+footer .footer_cnt .footer_social_media a:first-child {
+  padding-right: 4rem;
 }
 
 /*# sourceMappingURL=app.css.map */

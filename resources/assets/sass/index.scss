@@ -7,6 +7,7 @@
 .main_cnt {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 3rem;
 
     .category_cnt {
         display: flex;
@@ -16,6 +17,7 @@
         .all_posting_btn {
             border: 1px solid grey;
                 border-radius: 5px;
+                color: grey;
                 text-align: center;
                 padding: 0.7rem 2rem;
                 font-size: 1.2rem;
@@ -27,6 +29,7 @@
 
             border: 1px solid grey;
             border-radius: 5px;
+            color: grey;
             display: inline-flex;
             justify-content: center;
             word-wrap: break-word;
@@ -34,8 +37,8 @@
             font-size: 1.2rem;
             font-family: $font-family-sans-serif;
             
-            a {
-                
+            p {
+               margin: 0; 
             }
         }
     }
@@ -98,6 +101,10 @@
         width: 95%;
         align-items: center;
         padding-top: 1rem;
+
+        a {
+            color: #fff !important;
+        }
     }
 }
 

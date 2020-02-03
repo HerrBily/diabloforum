@@ -1,0 +1,93 @@
+.create_cnt {
+    margin: 0 auto;
+    width: 85%;
+    padding: 5rem 0;
+
+    h3 {
+        color: #fff;
+        font-family: 'zorqueregular';
+    }
+
+    form {
+        padding: 2rem 0;
+
+        label {
+            padding-bottom: 1.5rem;
+        }
+
+        .category_input {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+
+            label {
+                color: #fff;
+                font-size: 1.2rem;
+                font-family: $font-family-sans-serif;
+            }
+
+            select {
+                width: 90%;
+                border: none;
+                padding: 1rem 0;
+            }
+        }
+
+        .titel_input {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0;
+
+            label {
+                color: #fff;
+                font-size: 1.2rem;
+                font-family: $font-family-sans-serif;
+            }
+
+            input {
+                border: none;
+                border-bottom: 1px solid #fff;
+                background-color: #000;
+                width: 90%;
+                color: #fff;
+                font-family: $font-family-sans-serif;
+                outline: none;
+                padding: .5rem;
+            }
+        }
+
+        .text_input {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+
+            label {
+                color: #fff;
+                font-size: 1.2rem;
+                font-family: $font-family-sans-serif;
+            }
+
+            textarea {
+                background-color: #161616;
+                border: 1px solid #161616;
+                color: #fff;
+                font-size: 1rem;
+                font-family: $font-family-sans-serif;
+                padding: .5rem;
+                outline: none;
+            }
+        }
+
+        .create_btn {
+
+            button {
+                border: 1px solid #fff;
+                border-radius: 5px;
+                padding: .6rem 4rem;
+                background-color: #000;
+                color: #fff;
+                font-family: $font-family-sans-serif;
+            }
+        }
+    }
+}

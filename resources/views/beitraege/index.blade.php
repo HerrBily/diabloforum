@@ -16,11 +16,10 @@
         <a href="/beitraege" class="all_posting_btn">Alle Beiträge</a>
 
         @foreach ($categories as $category)
-            <div class="category_btn">
-                <a href="/beitraege/{{ $category->name }}" class="">
+            <a href="/beitraege/{{ $category->name }}" class="category_btn">
+        
                     {{ $category->name }}
-                </a>
-            </div>
+            </a>
         @endforeach
      
         <!-- @foreach ($categories as $category)

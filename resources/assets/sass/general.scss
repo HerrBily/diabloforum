@@ -1,3 +1,4 @@
+
 body {
         background-color: $body-bg;
 
@@ -52,6 +53,39 @@ body {
         }
 }
 
+// HOVER
+
+.nav-link:hover {
+    color: #b3cfdd !important;
+}
+
+.login_nav:hover {
+    border: 1px solid #b3cfdd;
+    color: #b3cfdd;
+}
+.welcome_btn:hover {
+    background-color: #b3cfdd;
+    color: #000;
+    text-decoration: none;
+}
+
+.all_posting_btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.category_cnt {
+
+    a:hover {
+        border: 1px solid #fff !important;
+        color: #fff !important;
+    }
+}
+
+
+
+
+
 .nav-item {
     padding-right: 3rem;
 }
@@ -62,10 +96,6 @@ body {
     font-size: 20px;
   }
 
-  
-  .nav-link:hover {
-      color: rgb(133, 31, 31) !important;
-  }
 
   .navbar-brand {
       img {
