@@ -39,5 +39,5 @@
     </div>
 </div>
 @empty
-<p>Keine Beiträge gerade vorhanden </p>
+<p class="beitrag_leer">Keine Beiträge gerade vorhanden </p>
 @endforelse

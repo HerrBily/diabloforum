@@ -22,13 +22,6 @@
             </a>
         @endforeach
      
-        <!-- @foreach ($categories as $category)
-
-        <a href="/beitraege/{{ $category->name }}" class="">
-            {{ $category->name }}
-        </a>
-
-        @endforeach -->
     </div>
     <div class="col-lg-10 beitrag_cnt">
 

@@ -207,7 +207,7 @@ body .diablo_header {
   margin: 0 auto;
   width: 90%;
 }
-.beitrag_cnt p {
+.beitrag_cnt .beitrag_leer {
   font-size: 1.8rem;
   font-family: "zorqueregular";
   text-align: center;
