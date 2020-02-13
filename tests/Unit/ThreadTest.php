@@ -2,9 +2,11 @@
 
 namespace Tests\Unit;
 
+use App\Notifications\ThreadWasUpdated;
 use Tests\TestCase;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Support\Facades\Notification;
 
 class ThreadTest extends TestCase
 {
@@ -51,6 +53,23 @@ class ThreadTest extends TestCase
 
         $this->assertCount(1, $this->thread->replies);
 
+    }
+
+    /** @test */
+    public function benachrichtigung_wenn_ein_beitrag_kommentiert_wird ()
+    {
+        Notification::fake();
+
+        $this->signIn()
+            ->thread->subscribe()
+            ->addReply([
+
+                'body' => 'Foobar',
+                'user_id' => 999
+        ]);
+
+        Notification::assertSentTo(auth()->user(), ThreadWasUpdated::class);
+    
     }
 
     /** @test */
