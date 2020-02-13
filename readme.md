@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Github:
 https://github.com/HerrBily/diabloforum
 
@@ -10,3 +11,8 @@ Wenn die Kategorien nicht funktionieren, dann muss man folgende Schritte machen.
 2. factory('App\Category, 3)->create();
 3. In der eigenen Datenbank die drei Kategorien in der categories table umändern in - Hilfe , Guide und Mitspielersuche
 
+=======
+Diablocom
+
+Live Server http://diablocom.herokuapp.com/
+>>>>>>> 394ee829b625797b46b329e4609e42508c91c8be
