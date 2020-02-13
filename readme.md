@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 510244d2203c7b92c19e7f5d4b93f44ce7a6c995
 Github:
 https://github.com/HerrBily/diabloforum
 
