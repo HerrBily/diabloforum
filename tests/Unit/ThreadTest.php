@@ -62,6 +62,48 @@ class ThreadTest extends TestCase
     }
 
     /** @test */
+    public function ein_beitrag_kann_abonniert_werden ()
+    {
+        $thread = create('App\Thread');
+
+        $thread->subscribe($userId = 1);
+
+        $this->assertEquals(
+            1,
+            $thread->subscriptions()->where('user_id', $userId)->count());
+    }
+
+    /** @test */
+    public function ein_beitrag_kann_endabonniert_werden ()
+    {
+        $thread = create('App\Thread');
+
+        $thread->subscribe($userId = 1);
+
+        $thread->unsubscribe($userId);
+
+        $this->assertCount(0, $thread->subscriptions);
+
+    } 
+
+     /** @test */
+     public function erkennt_angemeldeter_user_der_abonnierte ()
+     {
+         $thread = create('App\Thread');
+ 
+         $this->signIn();
+ 
+         $this->assertFalse($thread->isSubscribedTo);
+ 
+         $thread->subscribe();
+ 
+         $this->assertTrue($thread->isSubscribedTo);
+     
+     }
+
+
+
+    /** @test */
     public function ein_beitrag_ist_nicht_mehr_bold_wenn_ein_angemeldeter_user_gelesen_hat ()
     {
         $this->signIn();
@@ -78,10 +120,7 @@ class ThreadTest extends TestCase
         $this->assertFalse($thread->hasUpdatesFor($user));
 
         });
-        
-
-
-
+    
     }
 
 }

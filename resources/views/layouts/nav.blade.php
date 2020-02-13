@@ -40,6 +40,7 @@
                     </li>
                 </ul>
             </li>
+            <user-notifications></user-notifications>
             @endif
 
         </ul>

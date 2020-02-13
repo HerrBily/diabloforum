@@ -61,14 +61,14 @@
             <div class="login_btn">
 
                 <button type="submit">
-                    Register
+                    Registrieren
                 </button>
 
             </div>
         </form>
     </div>
     <div class="register_sctn col-lg-6">
-        <p>Ich habe noch keinen Account</p>
+        <p>Ich habe bereits einen Account</p>
         <a href="{{ route('login') }}">Login</a>
     </div>
 </div>

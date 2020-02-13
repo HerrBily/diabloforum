@@ -1,95 +1,125 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
-@font-face {
-  font-family: "zorqueregular";
-  src: url(".../fonts/zorque.woff2") format("woff2"), url("../fonts/zorque.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-body {
+@import url(https://fonts.googleapis.com/css?family=Ubuntu&display=swap);body {
   background-color: #000;
 }
+
 body p {
   font-family: "Ubuntu", sans-serif;
   color: #fff;
 }
+
 body a {
   color: #fff;
   text-decoration: none;
 }
+
 body h5 {
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
 }
+
 body .welcome_btn_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem 0 4rem 0;
 }
+
 body .welcome_btn_cnt .welcome_btn {
   border: 1px solid #b3cfdd;
   padding: 0.8rem 2.6rem;
   text-align: center;
   color: #b3cfdd;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
 }
+
 body .new_btn_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 5rem 0;
   margin: 0 auto;
   width: 80%;
 }
+
 body .new_btn_cnt .new_btn {
   border: 1px solid #fff;
   padding: 0.5rem 2rem;
   text-align: center;
   color: #fff;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
 }
+
 body .new_btn_cnt .new_btn span {
-  padding-right: 0.5rem;
+  padding-right: .5rem;
 }
+
 body .nav-link:hover {
   color: #b3cfdd !important;
 }
+
 body .login_nav:hover {
   border: 1px solid #b3cfdd;
   color: #b3cfdd;
 }
+
 body .welcome_btn:hover {
   background-color: #b3cfdd;
   color: #000;
   text-decoration: none;
 }
+
 body .all_posting_btn:hover {
   border: 1px solid #fff;
   color: #fff;
 }
+
 body .category_cnt a:hover {
   border: 1px solid #fff !important;
   color: #fff !important;
 }
+
 body .nav-item {
   padding-right: 3rem;
 }
+
 body .nav-link {
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
   color: #fff !important;
   font-size: 20px;
 }
+
 body .navbar-brand img {
   width: 8rem;
 }
+
 body .diablo_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   line-height: 3rem;
 }
+
 body .diablo_header {
   color: #fff;
   text-align: center;
@@ -102,7 +132,8 @@ body .diablo_header {
 
 .bg-dark {
   background-color: #000 !important;
-  box-shadow: 0 0 20px 0 #434343;
+  -webkit-box-shadow: 0 0 20px 0 #434343;
+          box-shadow: 0 0 20px 0 #434343;
 }
 
 .login_nav {
@@ -127,11 +158,13 @@ body .diablo_header {
   background-color: #000;
   border: 1px solid #fff;
 }
+
 .dropdown-menu li {
-  padding: 1rem 0.5rem;
+  padding: 1rem .5rem;
 }
+
 .dropdown-menu li a {
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
 }
 
 .index_header_img img {
@@ -139,15 +172,25 @@ body .diablo_header {
 }
 
 .main_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 3rem;
 }
+
 .main_cnt .category_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 4rem;
 }
+
 .main_cnt .category_cnt .all_posting_btn {
   border: 1px solid grey;
   border-radius: 5px;
@@ -157,17 +200,23 @@ body .diablo_header {
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .main_cnt .category_cnt .category_btn {
   border: 1px solid grey;
   border-radius: 5px;
   color: grey;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   word-wrap: break-word;
   padding: 0.7rem 2rem;
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .main_cnt .category_cnt .category_btn p {
   margin: 0;
 }
@@ -175,13 +224,16 @@ body .diablo_header {
 .diablo-cnt {
   padding-bottom: 5rem;
 }
+
 .diablo-cnt div {
   padding-bottom: 2rem;
   width: 30%;
 }
+
 .diablo-cnt div img {
   width: 100%;
 }
+
 .diablo-cnt h2 {
   color: #fff;
 }
@@ -192,6 +244,7 @@ body .diablo_header {
   margin: 0 auto;
   width: 40%;
 }
+
 .diablo_img img {
   width: 100%;
 }
@@ -199,6 +252,7 @@ body .diablo_header {
 .body {
   padding-bottom: 0.5rem;
 }
+
 .body p {
   color: #fff;
 }
@@ -207,9 +261,10 @@ body .diablo_header {
   margin: 0 auto;
   width: 90%;
 }
+
 .beitrag_cnt .beitrag_leer {
   font-size: 1.8rem;
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
   text-align: center;
   padding-top: 4rem;
 }
@@ -221,24 +276,34 @@ body .diablo_header {
 .posting_cnt {
   padding: 1.5rem 0;
 }
+
 .posting_cnt .posting_items {
   margin: 0 auto;
   width: 95%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 1rem;
 }
+
 .posting_cnt .posting_items a {
   color: #fff !important;
 }
 
 .comments {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .comments a:first-child {
   padding-right: 2.5rem;
 }
+
 .comments a:nth-child(2) {
   border-left: 1px solid #fff;
   padding-left: 2.5rem;
@@ -249,6 +314,7 @@ body .diablo_header {
   color: #fff !important;
   border-bottom: 1px solid #fff;
 }
+
 .text-center a:hover {
   color: #a71717 !important;
   border-bottom: 1px solid #a71717;
@@ -256,36 +322,49 @@ body .diablo_header {
 
 .show_img_cnt {
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .show_cnt {
   background-color: #161616;
   margin: 0 auto;
   width: 90%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .show_cnt .show_beitrag {
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 3rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .show_cnt .show_beitrag .profil_cnt {
   padding-right: 4rem;
 }
+
 .show_cnt .show_beitrag .profil_cnt div {
   text-align: center;
 }
 
 .posting_delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0 auto;
   width: 90%;
   padding: 1.5rem 0;
 }
+
 .posting_delete button {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
@@ -307,21 +386,32 @@ body .diablo_header {
   margin: 0 auto;
   width: 90%;
 }
+
 .new_reply_cnt .reply_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .new_reply_cnt .reply_cnt .reply_background {
   background-color: #161616;
   margin: 0 auto;
   width: 100%;
 }
+
 .new_reply_cnt .reply_cnt .reply_background .text_area_sect {
   margin: 0 auto;
   width: 80%;
   padding: 1.5rem 0;
 }
+
 .new_reply_cnt .reply_cnt .reply_background .text_area_sect .text_area {
   color: #fff;
   background-color: #161616;
@@ -331,11 +421,12 @@ body .diablo_header {
   border: 1px solid #fff;
   opacity: 0.4;
 }
+
 .new_reply_cnt .reply_cnt button {
   color: #b3cfdd;
   border: 1px solid #b3cfdd;
   border-radius: 5%;
-  padding: 0.8rem 6rem;
+  padding: .8rem 6rem;
   font-family: "Ubuntu", sans-serif;
   margin: 1rem;
 }
@@ -351,43 +442,68 @@ body .diablo_header {
 .panel {
   padding-top: 3rem;
 }
+
 .panel .panel-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   width: 80%;
 }
+
 .panel .panel-heading .replies_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .panel .panel-heading .replies_cnt .replies_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .panel .panel-heading .replies_cnt .replies_items a {
   color: #fff !important;
 }
+
 .panel .panel-heading .replies_cnt .replies_items h5 {
   padding-right: 1rem;
 }
+
 .panel .favorite_btn {
   padding-bottom: 1.2rem;
 }
+
 .panel .favorite_btn .fa-heart {
-  padding-right: 0.5rem;
+  padding-right: .5rem;
 }
+
 .panel .panel-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 80%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 1rem;
 }
+
 .panel .panel-footer .reply_delete_btn {
   background: #000;
   border: none;
   color: #fff;
 }
+
 .panel .panel-footer button:nth-child(1) {
   color: #fff;
   border: 1px solid #b3cfdd;
@@ -399,41 +515,60 @@ body .diablo_header {
   width: 85%;
   padding: 5rem 0;
 }
+
 .create_cnt h3 {
   color: #fff;
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
 }
+
 .create_cnt form {
   padding: 2rem 0;
 }
+
 .create_cnt form label {
   padding-bottom: 1.5rem;
 }
+
 .create_cnt form .category_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 2rem;
 }
+
 .create_cnt form .category_input label {
   color: #fff;
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .create_cnt form .category_input select {
   width: 90%;
   border: none;
   padding: 1rem 0;
 }
+
 .create_cnt form .titel_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 3rem 0;
 }
+
 .create_cnt form .titel_input label {
   color: #fff;
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .create_cnt form .titel_input input {
   border: none;
   border-bottom: 1px solid #fff;
@@ -442,39 +577,52 @@ body .diablo_header {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   outline: none;
-  padding: 0.5rem;
+  padding: .5rem;
 }
+
 .create_cnt form .text_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 2rem;
 }
+
 .create_cnt form .text_input label {
   color: #fff;
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .create_cnt form .text_input textarea {
   background-color: #161616;
   border: 1px solid #161616;
   color: #fff;
   font-size: 1rem;
   font-family: "Ubuntu", sans-serif;
-  padding: 0.5rem;
+  padding: .5rem;
   outline: none;
 }
+
 .create_cnt form .create_btn button {
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 0.6rem 4rem;
+  padding: .6rem 4rem;
   background-color: #000;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
 }
 
 .porfile_diablo_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   padding: 2.5rem 0;
 }
@@ -483,61 +631,94 @@ body .diablo_header {
   padding: 4rem 0;
   margin: 0 auto;
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .profile_cnt .profile_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 3rem;
   border-bottom: 1px solid #fff;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .profile_cnt .profile_name h3 {
   color: #fff;
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
   padding-right: 15rem;
 }
+
 .profile_cnt .profile_name p {
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .profile_cnt .profile_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 4rem 0;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .profile_cnt .profile_items h4 {
   color: #fff;
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
   padding-right: 15rem;
 }
+
 .profile_cnt .profile_items p {
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
+
 .profile_cnt .profile_leer {
   text-align: center;
   padding: 2rem 0;
 }
+
 .profile_cnt .datum {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   padding: 2rem 0;
 }
+
 .profile_cnt .activity_cnt {
   padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .profile_cnt .activity_cnt p {
   padding-right: 1rem;
   margin: 0;
 }
+
 .profile_cnt .activity_cnt .activity_items {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
@@ -545,6 +726,7 @@ body .diablo_header {
   color: #fff;
   text-decoration: none !important;
 }
+
 .profile_cnt .activity_cnt:nth-child(odd) {
   background-color: #161616;
 }
@@ -554,84 +736,123 @@ body .diablo_header {
 }
 
 .login_cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   width: 90%;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 3rem;
 }
+
 .login_cnt .login_form h2 {
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
   color: #fff;
   padding-bottom: 1rem;
 }
+
 .login_cnt form .textfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 3rem;
 }
+
 .login_cnt form .textfield label {
   font-family: "Ubuntu", sans-serif;
   color: #fff;
   font-size: 1.2rem;
   padding-bottom: 1rem;
 }
+
 .login_cnt form .textfield input {
   background-color: #000;
   border: none;
   border-bottom: 1px solid #fff;
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
   color: #fff;
   outline: none;
 }
+
 .login_cnt form .checkbox {
   padding-top: 1.5rem;
 }
+
 .login_cnt form .checkbox label {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
 }
+
 .login_cnt form .login_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 2rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .login_cnt form .login_btn button {
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 0.6rem 4rem;
+  padding: .6rem 4rem;
   background-color: #000;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
 }
+
 .login_cnt form .login_btn button:hover {
   margin: 0;
   font-size: 1.2rem;
   height: 50px;
   width: 260px;
 }
+
 .login_cnt form .login_btn a {
   padding-top: 1rem;
 }
+
 .login_cnt .register_sctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80vh;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .login_cnt .register_sctn p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.3rem;
   padding-bottom: 1rem;
 }
+
 .login_cnt .register_sctn a {
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 0.6rem 4rem;
+  padding: .6rem 4rem;
   background-color: #000;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
@@ -640,41 +861,51 @@ body .diablo_header {
 .welcome_cnt {
   padding: 5rem 0;
 }
+
 .welcome_cnt p {
   text-align: center;
   font-size: 2rem;
-  font-family: "zorqueregular";
+  font-family: 'zorqueregular';
 }
 
 .welcome_img {
   padding-bottom: 2rem;
 }
+
 .welcome_img img {
   width: 100%;
 }
 
 footer {
   padding: 2rem 0;
-  box-shadow: 0 0 20px 0 #434343;
+  -webkit-box-shadow: 0 0 20px 0 #434343;
+          box-shadow: 0 0 20px 0 #434343;
 }
+
 footer .footer_cnt {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
+
 footer .footer_cnt .footer_contact {
   padding-bottom: 1.5rem;
 }
+
 footer .footer_cnt .footer_contact a:first-child {
   padding-right: 4rem;
 }
+
 footer .footer_cnt .footer_logo_img {
   padding-bottom: 1.5rem;
 }
+
 footer .footer_cnt .footer_social_media {
   padding-bottom: 1.5rem;
 }
+
 footer .footer_cnt .footer_social_media a:first-child {
   padding-right: 4rem;
 }
 
-/*# sourceMappingURL=app.css.map */

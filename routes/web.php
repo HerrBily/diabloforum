@@ -26,6 +26,9 @@ Route::delete('/beitraege/{category}/{thread}', 'ThreadsController@destroy');
 Route::post('/beitraege', 'ThreadsController@store');
 Route::get('/beitraege/{category}', 'ThreadsController@index');
 
+Route::post('/beitraege/{category}/{thread}/subscriptions', 'ThreadSubscriptionsController@store')->middleware('auth');
+Route::delete('/beitraege/{category}/{thread}/subscriptions', 'ThreadSubscriptionsController@destroy')->middleware('auth');
+
 Route::get('/beitraege/{category}/{thread}/replies', 'RepliesController@index');
 Route::post('/beitraege/{category}/{thread}/replies', 'RepliesController@store');
 Route::patch('/replies/{reply}', 'RepliesController@update');
@@ -36,6 +39,10 @@ Route::delete('/replies/{reply}/favorites', 'FavoritesController@destroy');
 
 
 Route::get('/profiles/{user}', 'ProfilesController@show')->name('profile');
+Route::get('/profiles/{user}/notifications', 'UserNotificationsController@index');
+Route::delete('/profiles/{user}/notifications/{notification}', 'UserNotificationsController@destroy');
+
+
 
 Route::get('api/users', 'Api\UsersController@index');
 

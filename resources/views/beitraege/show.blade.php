@@ -32,6 +32,9 @@
                         {{ $thread->body }}
                     </p>
                 </div>
+                
+                <subscribe-button :active="{{ json_encode($thread->isSubscribedTo) }}"></subscribe-button>
+
             </div>
             @can ('update', $thread)
             <form action="{{ $thread->path() }}" method="POST" class="posting_delete">
