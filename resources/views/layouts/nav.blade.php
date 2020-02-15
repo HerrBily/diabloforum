@@ -40,11 +40,8 @@
                     </li>
                 </ul>
             </li>
-<<<<<<< Updated upstream
-            <li class="nav-item notific_nav_item">
-=======
+
             <li class="nav-item">
->>>>>>> Stashed changes
                 <user-notifications></user-notifications>
             </li>
             @endif
