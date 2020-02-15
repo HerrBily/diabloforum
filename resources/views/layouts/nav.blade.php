@@ -40,7 +40,9 @@
                     </li>
                 </ul>
             </li>
-            <user-notifications></user-notifications>
+            <li class="nav-item notific_nav_item">
+                <user-notifications></user-notifications>
+            </li>
             @endif
 
         </ul>

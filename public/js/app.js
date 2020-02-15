@@ -62022,10 +62022,11 @@ var render = function() {
         _vm._v(" "),
         _c(
           "ul",
-          { staticClass: "dropdown-menu" },
+          { staticClass: "dropdown-menu notification_dropdown" },
           _vm._l(_vm.notifications, function(notification) {
             return _c("li", [
               _c("a", {
+                staticClass: "nav-item",
                 attrs: { href: notification.data.link },
                 domProps: { textContent: _vm._s(notification.data.message) },
                 on: {
@@ -62049,7 +62050,7 @@ var staticRenderFns = [
     return _c(
       "a",
       {
-        staticClass: "dropdown-toggle",
+        staticClass: "dropdown-toggle nav-link",
         attrs: { href: "#", "data-toggle": "dropdown" }
       },
       [_c("span", { staticClass: "fas fa-bell" })]
@@ -63258,7 +63259,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         classes: function classes() {
-            return ['btn', this.active ? 'btn-primary' : 'btn-default'];
+            return ['subscribe_btn', this.active ? 'subscribe_btn_active' : 'btn-default'];
         }
     },
 
@@ -63282,7 +63283,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "button",
-    { staticClass: "btn", class: _vm.classes, on: { click: _vm.subscribe } },
+    {
+      staticClass: "subscribe_btn",
+      class: _vm.classes,
+      on: { click: _vm.subscribe }
+    },
     [_vm._v("Subscribe")]
   )
 }
@@ -63300,7 +63305,7 @@ if (false) {
 /* 196 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve '../fonts/zorque.woff' in '/home/vagrant/code/diabloforum/resources/assets/sass'\n    at factoryCallback (/home/vagrant/code/diabloforum/node_modules/webpack/lib/Compilation.js:282:40)\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:237:20\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:60:20\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:127:20\n    at /home/vagrant/code/diabloforum/node_modules/async/dist/async.js:3888:9\n    at /home/vagrant/code/diabloforum/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/home/vagrant/code/diabloforum/node_modules/async/dist/async.js:1062:13)\n    at /home/vagrant/code/diabloforum/node_modules/async/dist/async.js:969:16\n    at /home/vagrant/code/diabloforum/node_modules/async/dist/async.js:3885:13\n    at /home/vagrant/code/diabloforum/node_modules/webpack/lib/NormalModuleFactory.js:119:22\n    at onError (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:65:10)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:252:11)\n    at /home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:40:4\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:252:11)\n    at innerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:144:11)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:249:35)\n    at /home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:44:6\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/Resolver.js:168:10)\n    at loggingCallbackWrapper (/home/vagrant/code/diabloforum/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/code/diabloforum/node_modules/tapable/lib/Tapable.js:252:11)");
 
 /***/ })
 /******/ ]);

@@ -32,11 +32,16 @@
     background-color: #000;
     border: 1px solid #fff;
 
+
     li {
         padding: 1rem .5rem;
 
-        a {
-            font-family: 'zorqueregular';
-        }
+        // a {
+        //     font-family: 'zorqueregular';
+        // }
     }
+}
+
+.notification_dropdown {
+    left: -21rem;
 }

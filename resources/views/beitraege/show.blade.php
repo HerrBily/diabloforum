@@ -6,6 +6,9 @@
         <div class="show_img_cnt">
             <img src="{{ asset('img/diablo-logo-show.png') }}" alt="Das Logo von Diablo 3 Reaper of Souls">
         </div>
+        <div class="subscribe_cnt">
+            <subscribe-button :active="{{ json_encode($thread->isSubscribedTo) }}"></subscribe-button>
+        </div>
         <div class="col-lg-12 show_cnt">
 
             <div class="show_beitrag">
@@ -32,9 +35,6 @@
                         {{ $thread->body }}
                     </p>
                 </div>
-                
-                <subscribe-button :active="{{ json_encode($thread->isSubscribedTo) }}"></subscribe-button>
-
             </div>
             @can ('update', $thread)
             <form action="{{ $thread->path() }}" method="POST" class="posting_delete">

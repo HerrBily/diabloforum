@@ -7,9 +7,8 @@
     }
 
     a:hover {
-        color: rgb(167, 23, 23) !important;
-        border-bottom: 1px solid rgb(167, 23, 23);
-
+        color: #b3cfdd !important;
+        border-bottom: 1px solid #b3cfdd;
     }
 }
 
@@ -17,6 +16,30 @@
 .show_img_cnt {
     text-align: center;
     padding: 4rem 0 4rem 0;
+}
+
+.subscribe_cnt {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 1rem;
+
+    .subscribe_btn {
+        color: #b3cfdd;
+        border: solid 1px #b3cfdd;
+        font-family: $font-family-sans-serif;
+        border-radius: 5%;
+        padding: .8rem 4rem;
+        background-color: #000;
+    }
+
+    .subscribe_btn_active {
+        color: #fff;
+        background-color: #b3cfdd;
+        border: solid 1px #b3cfdd;
+
+    }
 }
 
 
@@ -30,7 +53,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
-        padding-top: 3rem;
+        padding: 2rem 0;
         align-items: center;
 
         .profil_cnt {

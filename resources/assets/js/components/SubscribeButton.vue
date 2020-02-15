@@ -1,6 +1,6 @@
 <template>
     
-    <button class="btn" :class="classes" @click="subscribe">Subscribe</button>
+    <button class="subscribe_btn" :class="classes" @click="subscribe">Subscribe</button>
 
 </template>
 
@@ -13,7 +13,7 @@
 
         computed: {
             classes() {
-                return ['btn', this.active ? 'btn-primary' : 'btn-default'];
+                return ['subscribe_btn', this.active ? 'subscribe_btn_active' : 'btn-default'];
             }
         },
 
