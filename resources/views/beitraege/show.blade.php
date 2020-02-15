@@ -34,6 +34,7 @@
                     <p>
                         {{ $thread->body }}
                     </p>
+                    
                 </div>
             </div>
             @can ('update', $thread)
